@@ -40,6 +40,10 @@ body {
     position: relative;
     padding: 20px;
 }
+.pages .link:hover{
+    color: pink;
+    transition: color 50ms ease;
+}
 #back1{
     background-image: url(wallpaperflare.com_wallpaper-1-1.jpg);
     background-position: center;
