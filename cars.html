@@ -1,27 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="cars.css">
+    <link rel="stylesheet" href="cars.css" />
     <title>Cars</title>
-</head>
-<body>
-    <div id="first-bg"> </div>
-    <div id="titre">
-        <h1 id="title">kricar</h1>
-        <div class="pages">
-            <a class="link" href="home.html">home</a>
-            <a class="link" href="about.html">about</a>
-            <a class="link" href="ride.html">ride</a>
-            <a class="link" href="contact.html">contact</a>
-        </div>
+  </head>
+  <body>
+    <div id="first-bg"></div>
+    <div id="title">
+      <div id="brand">
+        <img id="logo" src="car-logo-3.svg" alt="logo" />
+        <h1 id="name">
+          <span
+            style="
+              font-weight: 100;
+              font-family: sans-serif;
+              padding-right: 4px;
+            "
+            >kri</span
+          ><b>car</b>
+        </h1>
+      </div>
+      <div class="pages">
+        <a class="link" href="home.html">home</a>
+        <a class="link" href="about.html">about</a>
+        <a class="link" href="ride.html">ride</a>
+        <a class="link" href="contact.html">contact</a>
+      </div>
     </div>
     <div id="back1">
-        <h1>Hello World</h1>
+      <form>
+        <h1>Location de voiture</h1>
+        <hr />
+        <label for="location"><h2>Location</h2></label>
+        <select name="Location" class="select" id="location">
+          <option value="loc1">Salam</option>
+          <option value="loc2">Hay Al Matar</option>
+          <option value="loc3">Saada</option>
+          <option value="loc4">Nejd</option>
+          <option value="loc5">Sidi Moussa</option>
+          <option value="loc6">Centre Ville</option>
+        </select>
+        <div class="side-by-side">
+          <div class="date">
+            <label for="pick"><h2>Pick-up Date</h2></label>
+            <input type="date" />
+          </div>
+          <div class="date">
+            <label for="returne"><h2>Returne Date</h2></label>
+            <input type="date" />
+          </div>
+        </div>
+        <label for="Cars"><h2>Type of the car</h2></label>
+        <div>
+          <select
+            name="Cars"
+            class="select"
+            onchange="calculatePrice(event.target.value)"
+          >
+            <option value="audi">Audi</option>
+            <option value="hyundai">Hyundai</option>
+            <option value="volkswagen">Volkswagen</option>
+            <option value="renault">Renault</option>
+            <option value="bmw">BMW</option>
+            <option value="mercedes">Mercedes</option>
+          </select>
+        </div>
+        <br />
+        <hr />
+        <br />
+        <h2 class="pricing">Price : <span id="price"></span></h2>
+        <br />
+        <button type="submit">Reserve</button>
+      </form>
     </div>
-    
-</body>
+    <!-- <h1 id="quote">"Vous cherchez un véhicule ? Vous êtes au bon endroit."</h1> -->
+    <script>
+      const locations = {
+        loc1: 0.2,
+        loc2: 0.3,
+        loc3: 0.15,
+        loc4: 0.2,
+        loc5: 0.3,
+        loc6: 0.1,
+      };
+      const pricing = {
+        audi: 100,
+        hyundai: 200,
+        volkswagen: 150,
+        renault: 30,
+        bmw: 300,
+        mercedes: 250,
+      };
+      function calculatePrice(brand) {
+        const ePrice = document.getElementById("price");
+        const eLocation = document.getElementById("location");
+        const comition = locations[eLocation.value];
+        const price = pricing[brand];
+        ePrice.innerText = price + price * comition + "DH/J";
+      }
+    </script>
+  </body>
 </html>
