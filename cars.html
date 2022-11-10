@@ -9,74 +9,226 @@
     <title>Cars</title>
   </head>
   <body>
-    <div id="first-bg"></div>
-    <div id="title">
-      <div id="brand">
-        <img id="logo" src="car-logo-3.svg" alt="logo" />
-        <h1 id="name">
-          <span
-            style="
-              font-weight: 100;
-              font-family: sans-serif;
-              padding-right: 4px;
-            "
-            >kri</span
-          ><b>car</b>
-        </h1>
-      </div>
-      <div class="pages">
-        <a class="link" href="home.html">home</a>
-        <a class="link" href="about.html">about</a>
-        <a class="link" href="ride.html">ride</a>
-        <a class="link" href="contact.html">contact</a>
-      </div>
-    </div>
-    <div id="back1">
-      <form>
-        <h1>Location de voiture</h1>
-        <hr />
-        <label for="location"><h2>Location</h2></label>
-        <select name="Location" class="select" id="location">
-          <option value="loc1">Salam</option>
-          <option value="loc2">Hay Al Matar</option>
-          <option value="loc3">Saada</option>
-          <option value="loc4">Nejd</option>
-          <option value="loc5">Sidi Moussa</option>
-          <option value="loc6">Centre Ville</option>
-        </select>
-        <div class="side-by-side">
-          <div class="date">
-            <label for="pick"><h2>Pick-up Date</h2></label>
-            <input type="date" />
-          </div>
-          <div class="date">
-            <label for="returne"><h2>Returne Date</h2></label>
-            <input type="date" />
-          </div>
+    <header>
+      <div id="first-bg"></div>
+      <div id="title">
+        <div id="brand">
+          <img id="logo" src="car-logo-3.svg" alt="logo" />
+          <h1 id="name">
+            <span
+              style="
+                font-weight: 100;
+                font-family: sans-serif;
+                padding-right: 4px;
+              "
+              >kri</span
+            ><b>car</b>
+          </h1>
         </div>
-        <label for="Cars"><h2>Type of the car</h2></label>
-        <div>
-          <select
-            name="Cars"
-            class="select"
-            onchange="calculatePrice(event.target.value)"
-          >
-            <option value="audi">Audi</option>
-            <option value="hyundai">Hyundai</option>
-            <option value="volkswagen">Volkswagen</option>
-            <option value="renault">Renault</option>
-            <option value="bmw">BMW</option>
-            <option value="mercedes">Mercedes</option>
+        <div class="pages">
+          <a class="link" href="home.html">home</a>
+          <a class="link" href="about.html">about</a>
+          <a class="link" href="show-room.html">Show Room</a>
+          <a class="link" href="contact.html">contact</a>
+        </div>
+      </div>
+      <div id="back1">
+        <form>
+          <h1>Location de voiture</h1>
+          <hr />
+          <label for="location"><h2>Location</h2></label>
+          <select name="Location" class="select" id="location">
+            <option value="loc1">Salam</option>
+            <option value="loc2">Hay Al Matar</option>
+            <option value="loc3">Saada</option>
+            <option value="loc4">Nejd</option>
+            <option value="loc5">Sidi Moussa</option>
+            <option value="loc6">Centre Ville</option>
           </select>
+          <div class="side-by-side">
+            <div class="date">
+              <label for="pick"><h2>Pick-up Date</h2></label>
+              <input type="date" />
+            </div>
+            <div class="date">
+              <label for="returne"><h2>Returne Date</h2></label>
+              <input type="date" />
+            </div>
+          </div>
+          <label for="Cars"><h2>Type of the car</h2></label>
+          <div>
+            <select
+              name="Cars"
+              class="select"
+              onchange="calculatePrice(event.target.value)"
+            >
+              <option value="audi">Audi</option>
+              <option value="hyundai">Hyundai</option>
+              <option value="volkswagen">Volkswagen</option>
+              <option value="renault">Renault</option>
+              <option value="bmw">BMW</option>
+              <option value="mercedes">Mercedes</option>
+            </select>
+          </div>
+          <br />
+          <hr />
+          <br />
+          <h2 class="pricing">Price : <span id="price"></span></h2>
+          <br />
+          <button type="submit">Reserve</button>
+        </form>
+      </div>
+    </header>
+    <article>
+      <div>
+        <div id="some-cars">
+          <img id="cars4" src="cars4.jpg.webp" alt="" />
+          <h1 id="choose">Why choose us</h1>
         </div>
-        <br />
-        <hr />
-        <br />
-        <h2 class="pricing">Price : <span id="price"></span></h2>
-        <br />
-        <button type="submit">Reserve</button>
-      </form>
-    </div>
+        <div id="info">
+          <div class="infos">
+            <h2>Quality and experience</h2>
+            <p>
+              Expert for more than 5 years to help you rent a car in Morocco
+            </p>
+          </div>
+          <div class="infos">
+            <h2>Best price guarantee</h2>
+            <p>We guarantee the best price for our car rental deals!</p>
+          </div>
+          <div class="infos">
+            <h2>Free cancellation</h2>
+            <p>Cancel without charge until 24h before the rental.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div id="sell">
+          <h1 style="text-transform: uppercase">Bestsellers</h1>
+          <p>The most requested cars by our customers</p>
+        </div>
+      </div>
+      <div id="rate">
+        <div>
+          <h1 style="text-transform: uppercase">Consumer reviews</h1>
+        </div>
+        <div id="list">
+          <ul id="stars">
+            <li class="ul">
+              <h2><img src="star-orange-full.svg" alt="" /></h2>
+            </li>
+            <li class="ul">
+              <h2><img src="star-orange-full.svg" alt="" /></h2>
+            </li>
+            <li class="ul">
+              <h2><img src="star-orange-full.svg" alt="" /></h2>
+            </li>
+            <li class="ul">
+              <h2><img src="star-orange-full.svg" alt="" /></h2>
+            </li>
+            <li class="ul">
+              <h2><img src="star-orange-empty.svg" alt="" /></h2>
+            </li>
+            <li class="ul"><h2>Rated 4.0 out of 5 from 57 Reviews</h2></li>
+          </ul>
+        </div>
+        <div id="comments">
+          <div class="comment">
+            <ul class="people">
+              <li class="ul"><h2>Aymen K.</h2></li>
+              <li class="ul">
+                <h2><img src="star-orange-full.svg" alt="" /></h2>
+              </li>
+              <li class="ul">
+                <h2><img src="star-orange-full.svg" alt="" /></h2>
+              </li>
+              <li class="ul">
+                <h2><img src="star-orange-full.svg" alt="" /></h2>
+              </li>
+              <li class="ul">
+                <h2><img src="star-orange-full.svg" alt="" /></h2>
+              </li>
+              <li class="ul">
+                <h2><img src="star-orange-full.svg" alt="" /></h2>
+              </li>
+            </ul>
+            <p>
+              So far I'm very satsfied with the experience: we got the exact car
+              model we reserved, the damages (small scratches) were documented
+              together with the very competent and friendly manager. Will update
+              after returning the car.
+            </p>
+          </div>
+          <div class="comment">
+            <ul class="people">
+              <li class="ul"><h2>Layla M.</h2></li>
+              <li class="ul">
+                <h2><img src="star-orange-full.svg" alt="" /></h2>
+              </li>
+              <li class="ul">
+                <h2><img src="star-orange-full.svg" alt="" /></h2>
+              </li>
+              <li class="ul">
+                <h2><img src="star-orange-full.svg" alt="" /></h2>
+              </li>
+              <li class="ul">
+                <h2><img src="star-orange-full.svg" alt="" /></h2>
+              </li>
+              <li class="ul">
+                <h2><img src="star-orange-full.svg" alt="" /></h2>
+              </li>
+            </ul>
+            <p>
+              i really like the service and the sweetness of one of the
+              responsible, i recommend this for everyone
+            </p>
+          </div>
+          <div class="comment">
+            <ul class="people">
+              <li class="ul"><h2>Imad F.</h2></li>
+              <li class="ul">
+                <h2><img src="star-orange-full.svg" alt="" /></h2>
+              </li>
+              <li class="ul">
+                <h2><img src="star-orange-full.svg" alt="" /></h2>
+              </li>
+              <li class="ul">
+                <h2><img src="star-orange-full.svg" alt="" /></h2>
+              </li>
+              <li class="ul">
+                <h2><img src="star-orange-full.svg" alt="" /></h2>
+              </li>
+              <li class="ul">
+                <h2><img src="star-orange-empty.svg" alt="" /></h2>
+              </li>
+            </ul>
+            <p>
+              It’s very good service people there are helpful they do what you
+              want and you can trust. If you don’t know where you going they
+              will help you
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <footer>
+      <div id="foot">
+        <div id="brand2">
+          <img id="logo" src="car-logo-3.svg" alt="logo" />
+          <h1 id="name">
+            <span
+              style="
+                font-weight: 100;
+                font-family: sans-serif;
+                padding-right: 4px;
+              "
+              >kri</span
+            ><b>car</b>
+          </h1>
+        </div>
+        <p>Copyright © 2022 kri<b>car</b>. All rights reserved.</p>
+      </div>
+    </footer>
     <!-- <h1 id="quote">"Vous cherchez un véhicule ? Vous êtes au bon endroit."</h1> -->
     <script>
       const locations = {
@@ -91,7 +243,7 @@
         audi: 100,
         hyundai: 200,
         volkswagen: 150,
-        renault: 30,
+        renault: 100,
         bmw: 300,
         mercedes: 250,
       };

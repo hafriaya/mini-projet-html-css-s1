@@ -26,7 +26,6 @@ body {
   align-items: center;
   padding: 0 20px;
   position: fixed;
-  
 }
 #brand {
   display: flex;
@@ -104,24 +103,108 @@ body {
   justify-content: space-between;
 }
 
-.pricing{
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0;
+.pricing {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
 }
-button{
-    width: 100%;
-            height: 50px;
-            border-radius: 20px;
-            background-color: rgb(20, 20, 100);
-            border: none;
-            color: white;
-            font-weight: bold;
-            font-size: 18px;
+button {
+  width: 100%;
+  height: 50px;
+  border-radius: 20px;
+  background-color: rgb(20, 20, 100);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
 }
-button:hover{
-    color: pink;
+button:hover {
+  color: pink;
   transition: color 50ms ease;
+}
+#brand2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+article {
+  height: 100%;
+}
+#some-cars {
+  text-align: center;
+}
+#cars4 {
+  width: 70%;
+}
+#choose {
+  font-size: 40px;
+  margin: auto;
+}
+#info {
+  display: flex;
+  text-align: center;
+  margin-bottom: 100px;
+  padding: 50px;
+}
+.infos {
+  margin: auto;
+  width: 40%;
+}
+#sell{
+  margin: auto;
+  text-align: center;
+  background-color: rgb(245, 245, 245);
+  padding: 20px;
+}
+#rate {
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+}
+#list{
+  position: relative;
+  margin: auto;
+  text-align: center;
+  display: inline-block;
+}
+#stars {
+  display: flex;
+  list-style: none;
+} 
+#comments{
+  display: flex;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.comment{
+  margin: auto;
+  width: 30%;
+}
+.people{
+  display: flex;
+  list-style: none;
+}
+.ul{
+  padding-right:5px;
+}
+#foot {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(7, 7, 67);
+  opacity: 0.8;
+  color: white;
+  text-align: center;
+  padding-bottom: 40px;
+  bottom: 0%;
+}
+
+#side1 {
+  display: flex;
+  justify-content: space-between;
+}
+#side2 {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 580px) {
