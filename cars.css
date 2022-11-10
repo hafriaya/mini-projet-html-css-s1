@@ -130,6 +130,9 @@ button:hover {
 article {
   height: 100%;
 }
+#chhose-us {
+  padding: 20px;
+}
 #some-cars {
   text-align: center;
 }
@@ -150,42 +153,67 @@ article {
   margin: auto;
   width: 40%;
 }
-#sell{
+#sell {
   margin: auto;
   text-align: center;
   background-color: rgb(245, 245, 245);
-  padding: 20px;
+  padding: 30px;
+  height: 100%;
+}
+#bestsells {
+  display: flex;
+  text-align: center;
+  padding: 30px;
+}
+.best {
+  margin: auto;
+  text-align: center;
+}
+.best h4 {
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  color: white;
+  background-color: rgb(7, 7, 67);
+  opacity: 80%;
+  padding-top: 10px;
 }
 #rate {
   margin: auto;
   text-align: center;
-  padding: 20px;
+  padding: 40px;
 }
-#list{
+#list {
   position: relative;
   margin: auto;
-  text-align: center;
   display: inline-block;
 }
-#stars {
+ul {
   display: flex;
   list-style: none;
-} 
-#comments{
+}
+#comments {
   display: flex;
-  text-align: center;
   padding-bottom: 50px;
+  align-items: flex-start;
+  padding-left: 50px;
 }
-.comment{
-  margin: auto;
+.comment {
   width: 30%;
+  padding-right: 100px;
 }
-.people{
+.people {
   display: flex;
   list-style: none;
+  justify-content: center;
+  margin: 0px;
+  position: relative;
+  left: -15px;
 }
-.ul{
-  padding-right:5px;
+.stars {
+  padding-right: 5px;
 }
 #foot {
   width: 100%;
