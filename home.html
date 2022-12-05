@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="cars.css" />
-    <title>Cars</title>
+    <link rel="stylesheet" href="home.css">
+    <title>KriCar</title>
   </head>
   <body>
     <header>
@@ -38,6 +39,7 @@
           <hr />
           <label for="location"><h2>Location</h2></label>
           <select name="Location" class="select" id="location">
+            <option value="loc0"></option>
             <option value="loc1">Salam</option>
             <option value="loc2">Hay Al Matar</option>
             <option value="loc3">Saada</option>
@@ -62,6 +64,7 @@
               class="select"
               onchange="calculatePrice(event.target.value)"
             >
+              <option value="car0"></option>
               <option value="audi">Audi</option>
               <option value="hyundai">Hyundai</option>
               <option value="volkswagen">Volkswagen</option>
@@ -127,6 +130,7 @@
           <h1 style="text-transform: uppercase">Consumer reviews</h1>
         </div>
         <div id="list">
+          <h2>Rated 4.0 out of 5 from 57 Reviews</h2>
           <ul>
             <li class="stars">
               <h2><img src="star-orange-full.svg" alt="" /></h2>
@@ -143,29 +147,31 @@
             <li class="stars">
               <h2><img src="star-orange-empty.svg" alt="" /></h2>
             </li>
-            <li class="stars"><h2>Rated 4.0 out of 5 from 57 Reviews</h2></li>
           </ul>
         </div>
+        <br>
         <div id="comments">
           <div class="comment">
-            <span style="font-size: 25px"><b>Aymen K.</b></span>
-            <ul class="people">
-              <li class="stars">
-                <h2><img src="star-orange-full.svg" alt="" /></h2>
-              </li>
-              <li class="stars">
-                <h2><img src="star-orange-full.svg" alt="" /></h2>
-              </li>
-              <li class="stars">
-                <h2><img src="star-orange-full.svg" alt="" /></h2>
-              </li>
-              <li class="stars">
-                <h2><img src="star-orange-full.svg" alt="" /></h2>
-              </li>
-              <li class="stars">
-                <h2><img src="star-orange-full.svg" alt="" /></h2>
-              </li>
-            </ul>
+            <div>
+              <span style="font-size: 25px"><b>Aymen K.</b></span>
+              <ul class="people">
+                <li class="stars">
+                  <h2><img src="star-orange-full.svg" alt="" /></h2>
+                </li>
+                <li class="stars">
+                  <h2><img src="star-orange-full.svg" alt="" /></h2>
+                </li>
+                <li class="stars">
+                  <h2><img src="star-orange-full.svg" alt="" /></h2>
+                </li>
+                <li class="stars">
+                  <h2><img src="star-orange-full.svg" alt="" /></h2>
+                </li>
+                <li class="stars">
+                  <h2><img src="star-orange-full.svg" alt="" /></h2>
+                </li>
+              </ul>
+            </div>
             <p>
               So far I'm very satsfied with the experience: we got the exact car
               model we reserved, the damages (small scratches) were documented
@@ -174,48 +180,52 @@
             </p>
           </div>
           <div class="comment">
-            <span style="font-size: 25px"><b>Layla M.</b></span>
-            <ul class="people">
-              <li class="stars">
-                <h2><img src="star-orange-full.svg" alt="" /></h2>
-              </li>
-              <li class="stars">
-                <h2><img src="star-orange-full.svg" alt="" /></h2>
-              </li>
-              <li class="stars">
-                <h2><img src="star-orange-full.svg" alt="" /></h2>
-              </li>
-              <li class="stars">
-                <h2><img src="star-orange-full.svg" alt="" /></h2>
-              </li>
-              <li class="stars">
-                <h2><img src="star-orange-full.svg" alt="" /></h2>
-              </li>
-            </ul>
+            <div>
+              <span style="font-size: 25px"><b>Layla M.</b></span>
+              <ul class="people">
+                <li class="stars">
+                  <h2><img src="star-orange-full.svg" alt="" /></h2>
+                </li>
+                <li class="stars">
+                  <h2><img src="star-orange-full.svg" alt="" /></h2>
+                </li>
+                <li class="stars">
+                  <h2><img src="star-orange-full.svg" alt="" /></h2>
+                </li>
+                <li class="stars">
+                  <h2><img src="star-orange-full.svg" alt="" /></h2>
+                </li>
+                <li class="stars">
+                  <h2><img src="star-orange-full.svg" alt="" /></h2>
+                </li>
+              </ul>
+            </div>
             <p>
               i really like the service and the sweetness of one of the
               responsible, i recommend this for everyone
             </p>
           </div>
           <div class="comment">
-            <span style="font-size: 25px"><b>Imad F.</b></span>
-            <ul class="people">
-              <li class="stars">
-                <h2><img src="star-orange-full.svg" alt="" /></h2>
-              </li>
-              <li class="stars">
-                <h2><img src="star-orange-full.svg" alt="" /></h2>
-              </li>
-              <li class="stars">
-                <h2><img src="star-orange-full.svg" alt="" /></h2>
-              </li>
-              <li class="stars">
-                <h2><img src="star-orange-full.svg" alt="" /></h2>
-              </li>
-              <li class="stars">
-                <h2><img src="star-orange-empty.svg" alt="" /></h2>
-              </li>
-            </ul>
+            <div>
+              <span style="font-size: 25px"><b>Imad F.</b></span>
+              <ul class="people">
+                <li class="stars">
+                  <h2><img src="star-orange-full.svg" alt="" /></h2>
+                </li>
+                <li class="stars">
+                  <h2><img src="star-orange-full.svg" alt="" /></h2>
+                </li>
+                <li class="stars">
+                  <h2><img src="star-orange-full.svg" alt="" /></h2>
+                </li>
+                <li class="stars">
+                  <h2><img src="star-orange-full.svg" alt="" /></h2>
+                </li>
+                <li class="stars">
+                  <h2><img src="star-orange-empty.svg" alt="" /></h2>
+                </li>
+              </ul>
+            </div>
             <p>
               It’s very good service people there are helpful they do what you
               want and you can trust. If you don’t know where you going they
@@ -243,7 +253,6 @@
         <p>Copyright © 2022 kri<b>car</b>. All rights reserved.</p>
       </div>
     </footer>
-    <!-- <h1 id="quote">"Vous cherchez un véhicule ? Vous êtes au bon endroit."</h1> -->
     <script>
       const locations = {
         loc1: 0.2,
