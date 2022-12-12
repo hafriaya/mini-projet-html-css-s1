@@ -1,10 +1,33 @@
+#first-bg {
+  height: 100px;
+}
+#back {
+  background-color: pink;
+  height: 200px;
+
+  width: 100%;
+
+  position: relative;
+  top: -30px;
+}
+
+#back h1 {
+  text-align: left;
+  margin: 0px 200px;
+  padding: 100px;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: black;
+  font-size: 28px;
+  text-transform: uppercase;
+}
 #foot {
-    position: absolute;
-    bottom: 0%;
-  }
-  #brand2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
+  position: absolute;
+  bottom: 0%;
+}
+#brand2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
