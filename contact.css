@@ -4,16 +4,13 @@
 #back {
   background-color: pink;
   height: 200px;
-
   width: 100%;
-
   position: relative;
   top: -30px;
 }
-
 #back h1 {
   text-align: left;
-  margin: 0px 200px;
+  margin: 0px 185px;
   padding: 100px;
   line-height: 1;
   font-weight: 600;
@@ -22,9 +19,62 @@
   font-size: 28px;
   text-transform: uppercase;
 }
+article {
+  margin: 0 300px;
+}
+div h2 {
+  line-height: 1.5;
+  margin: 0 0 30px 0;
+  font-size: 25px;
+}
+#contact {
+  display: flex;
+  justify-content: space-between;
+}
+.forms {
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+}
+input {
+  width: 200px;
+  height: 30px;
+}
+
+#line2 {
+  padding-top: 20px;
+}
+#line2 input {
+  width: 95%;
+}
+button {
+  margin-top: 40px;
+  width: 95%;
+  height: 50px;
+  border-radius: 20px;
+  background-color: rgb(20, 20, 100);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+button:hover {
+  color: pink;
+  transition: color 50ms ease;
+}
+.side {
+  float: left;
+}
+#right {
+  margin-left: 50px;
+}
+article a {
+  text-decoration: none;
+  color: rgb(20, 20, 100);
+}
 #foot {
   position: absolute;
-  bottom: 0%;
+  top: 97%;
 }
 #brand2 {
   display: flex;

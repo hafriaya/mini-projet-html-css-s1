@@ -1,58 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="cars.css" />
     <link rel="stylesheet" href="contact.css" />
     <title>KriCar</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div id="first-bg"></div>
-        <div id="title">
-          <div id="brand">
-            <img id="logo" src="car-logo-3.svg" alt="logo" />
-            <h1 id="name">
-              <span
-                style="
-                  font-weight: 100;
-                  font-family: sans-serif;
-                  padding-right: 4px;
-                "
-                >kri</span
-              ><b>car</b>
-            </h1>
+      <div id="first-bg"></div>
+      <div id="title">
+        <div id="brand">
+          <img id="logo" src="car-logo-3.svg" alt="logo" />
+          <h1 id="name">
+            <span
+              style="
+                font-weight: 100;
+                font-family: sans-serif;
+                padding-right: 4px;
+              "
+              >kri</span
+            ><b>car</b>
+          </h1>
+        </div>
+        <div class="pages">
+          <a class="link" href="home.html">home</a>
+          <a class="link" href="about.html">about</a>
+          <a class="link" href="show-room.html">Show Room</a>
+          <a class="link" href="contact.html">contact</a>
+        </div>
+      </div>
+      <div id="back">
+        <h1>contact</h1>
+      </div>
+    </header>
+    <article>
+      <div class="side">
+        <div><h2>Contact form</h2></div>
+        <div id="contact">
+          <div class="forms">
+            <form>
+              <label for="name">Name *</label><br /><br />
+              <input type="text" id="fname" name="name" />
+            </form>
           </div>
-          <div class="pages">
-            <a class="link" href="home.html">home</a>
-            <a class="link" href="about.html">about</a>
-            <a class="link" href="show-room.html">Show Room</a>
-            <a class="link" href="contact.html">contact</a>
+          <div class="forms">
+            <form>
+              <label for="email">Email *</label><br /><br />
+              <input type="email" id="email" name="email" />
+            </form>
+          </div>
+          <div class="forms">
+            <form>
+              <label for="tel">Phone</label><br /><br />
+              <input type="tel" id="tel" name="tel" /><br />
+            </form>
           </div>
         </div>
-        <div id="back">
-            <h1>contact</h1>
+        <div id="line2">
+          <form>
+            <label for="subject">Subject *</label><br /><br />
+            <input type="text" id="subject" name="subject" />
+          </form>
         </div>
-      </header>
-      <footer>
-        <div id="foot">
-          <div id="brand2">
-            <img id="logo" src="car-logo-3.svg" alt="logo" />
-            <h1 id="name">
-              <span
-                style="
-                  font-weight: 100;
-                  font-family: sans-serif;
-                  padding-right: 4px;
-                "
-                >kri</span
-              ><b>car</b>
-            </h1>
-          </div>
-          <p>Copyright © 2022 kri<b>car</b>. All rights reserved.</p>
+        <div id="line2">
+          <form>
+            <label for="message">Message *</label><br /><br />
+            <textarea name="message" id="message" cols="86" rows="10"></textarea>
+          </form>
         </div>
-      </footer>
-</body>
+        <div>
+          <form action="">
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+      <div id="right" class="side">
+        <div>
+          <h3>Adresse:</h3>
+          <p>Av. Al Massira Al Khadra, Sidi Moussa, <br />El jadida, Morocco</p>
+        </div>
+        <br />
+        <div>
+          <p><b>Téléphone : </b>+212.600.00.00.00</p>
+          <p><b>Fixe : </b>+212.523.37.00.00</p>
+          <p><b>Email : </b> <a href="">contact@kricar.com</a></p>
+        </div>
+      </div>
+    </article>
+    <footer>
+      <div id="foot">
+        <div id="brand2">
+          <img id="logo" src="car-logo-3.svg" alt="logo" />
+          <h1 id="name">
+            <span
+              style="
+                font-weight: 100;
+                font-family: sans-serif;
+                padding-right: 4px;
+              "
+              >kri</span
+            ><b>car</b>
+          </h1>
+        </div>
+        <p>Copyright © 2022 kri<b>car</b>. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
