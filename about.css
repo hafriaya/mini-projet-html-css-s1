@@ -57,21 +57,42 @@ body {
   color: pink;
   transition: color 50ms ease;
 }
-#back1 {
-  background-color: pink;
+#back2 {
+  background-image: url(bg-banner.jpg);
   background-position: center;
   width: 100%;
-  height: 50vh;
+  height: 80vh;
   position: relative;
   top: -111px;
 }
-#back1::after {
+#back2::after {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   background: pink;
   opacity: 30%;
+}
+#brand2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+article{
+  color: #000;
+  position: absolute;
+  top: 60%;
+}
+#foot{
+  position: absolute;
+  bottom: 0; 
+ }
+#back3{
+  background-color: pink;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 16%;
 }
 #quote {
   color: white;
@@ -82,14 +103,6 @@ body {
   bottom: 0;
   margin: auto;
   padding: 30px;
-  font-size: 60px;
+  font-size: 40px;
+  vertical-align: middle;
 }
-#brand2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#foot{
-  position: absolute;
-  bottom: 0%;
- }
