@@ -21,7 +21,7 @@
   transition: 0.2s linear;
 }
 
-html {
+section {
   font-size: 85%;
   overflow-x: hidden;
   scroll-padding-top: 7rem;

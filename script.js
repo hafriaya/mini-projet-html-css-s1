@@ -1,5 +1,3 @@
-
-
 var swiper = new Swiper(".featured-slider", {
   grabCursor: true,
   centeredSlides: true,  
