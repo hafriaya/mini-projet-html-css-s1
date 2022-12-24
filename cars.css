@@ -89,7 +89,11 @@ body {
   border-radius: 20px;
   padding: 30px;
 }
-
+#brand2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #foot {
   width: 100%;
   height: 120px;
