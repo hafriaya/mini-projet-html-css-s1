@@ -1,0 +1,36 @@
+#first-bg {
+  height: 80px;
+}
+article {
+  padding: 100px 0;
+}
+#show-rrom{
+  margin: auto;
+  text-align: center;
+  background-color: pink;
+  padding: 30px 0;
+  height: 100%;
+  width: 100%;
+}
+img {
+  width: 50%;
+}
+.line {
+  display: flex;
+  text-align: center;
+  padding: 30px;
+  overflow-x: scroll;
+}
+.room {
+  margin: auto;
+  text-align: center;
+}
+#foot {
+  position: absolute;
+  bottom: 0%;
+}
+#brand2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
